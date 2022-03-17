@@ -9,4 +9,3 @@ Developer
 ************
 
 `Richard Bernisca <https://richardbernisca.com/about>`_
-.
