@@ -1,0 +1,222 @@
+/* reset */
+
+html,
+body {
+	height: 100%;
+}
+
+.bxo {
+	min-height: 100%;
+}
+
+.bxo-content {
+}
+
+.bxo-footer {
+}
+
+.bxo-header {
+}
+
+.bxo-main {
+	padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 32px;
+}
+
+/* reset */
+
+.bxo form .form-control + .error,
+.bxo-modal form .form-control + .error {
+	background-color: #f2dede;
+	color: #a94442;
+
+	font-size: 14px;
+}
+
+.bxo input.form-control {
+	border-color: #8b80f9;
+	border-width: 2px;
+	margin-bottom: 15px;
+}
+
+.bxo .btn.btn-primary {
+	background-color: #8b80f9;
+	border-color: transparent;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Oswald", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	position: relative;
+	/* top: 145px; */
+	order: 1;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+	-webkit-appearance: none;
+}
+
+.bxo .btn.btn-primary:hover {
+	transform: translate3d(0, -5px, 0);
+}
+
+.bxo .btn.btn-primary:hover::after {
+	height: 12px;
+	left: 3%;
+	transform: translate3d(0, 5px, 0);
+	width: 94%;
+}
+
+/* bxo lander div */
+
+.bxo_lander {
+	background-image: url("/assets/images/confetti.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.bxo_lander::after {
+	background-image: url("/assets/images/hand.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	z-index: -1;
+}
+
+.bxo_lander::before {
+	background-image: url("/assets/images/cash.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	z-index: -1;
+}
+
+/* bxo lander div */
+.anim-upDown {
+	animation-name: upDown;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.bxo-hl h1 {
+	font-size: 120px;
+	letter-spacing: -6px;
+}
+
+.bxo-hl h2 {
+	font-size: 60px;
+}
+/* targeting up to 200 */
+.bxo_lander .bxo-hl h1 {
+	color: #fff;
+	line-height: 172px;
+	margin-top: -15px;
+	position: relative;
+	z-index: 2;
+	font-size: 144px;
+	padding: 20px;
+}
+
+.bxo_lander .bxo-hl h1::before {
+	background-image: url("/assets/images/hl-bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* targeting up to 200 */
+
+/* targeting exclusive offer and free spins */
+.bxo_lander .bxo-hl h2 {
+	color: #fff;
+	font-size: 1.7em;
+	line-height: 91px;
+	position: relative;
+	z-index: 1;
+	font-size: 34px;
+}
+
+.bxo-hl h2::before {
+	background-image: url("/assets/images/hl-bg2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* targeting exclusive offer and free spins */
+
+@keyframes upDown {
+	0%,
+	50%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	25%,
+	75% {
+		transform: translate3d(0, 15px, 0);
+	}
+}
