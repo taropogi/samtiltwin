@@ -196,7 +196,7 @@ html [type="button"] {
 	text-decoration: none;
 }
 
-.bxo-footer p {
+/* .bxo-footer p {
 	font-size: 10px;
 }
 
@@ -207,7 +207,7 @@ html [type="button"] {
 .bxo-footer--colored {
 	background-color: #ec3167;
 	color: #fff;
-}
+} */
 
 /* .bxo-hl {
 } */
@@ -247,8 +247,8 @@ html [type="button"] {
 	color: #fff;
 }
 
-.bxo-logo {
-}
+/* .bxo-logo {
+} */
 
 .bxo_checkmail {
 	padding-bottom: 200px !important;

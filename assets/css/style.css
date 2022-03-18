@@ -208,6 +208,23 @@ html [type="button"] {
 
 /* targeting exclusive offer and free spins */
 
+/* targeting footer */
+
+.bxo-footer p {
+	font-size: 10px;
+}
+
+.bxo-footer p:only-of-type {
+	margin-bottom: 0;
+}
+
+.bxo-footer--colored {
+	background-color: #ec3167;
+	color: #fff;
+}
+
+/* footer */
+
 @keyframes upDown {
 	0%,
 	50%,
