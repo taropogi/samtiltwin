@@ -12,7 +12,7 @@ const app = Vue.createApp({
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
-					emailAddress: "taro",
+					emailAddress: this.enteredEmail,
 				}),
 			})
 				.then((res) => {
