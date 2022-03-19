@@ -15,11 +15,9 @@
 
 </head>
 
-<body class='my-body-class another-body-class' id="app">
+<body class='my-body-class another-body-class'>
 
-
-
-    <div class="bxo bxo_lander container-fluid p-0">
+    <div class="bxo bxo_lander container-fluid p-0" id="app">
         <header class="bxo-header col-md-12 mb-4 pt-3 pt-md-4 text-center">
             <div class="bxo-logo">
                 <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo">
