@@ -26,7 +26,7 @@ class Welcome extends CI_Controller
 	}
 
 
-	private function insertEntry()
+	public function insertEntry()
 	{
 		$this->db->insert('entries', [
 			'email_address' => 'test@test.com'

@@ -1,6 +1,7 @@
 <form id="register_form" class="form">
 
-    <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email"
+        v-model="enteredEmail">
     <div id="no_email" class="error">
         <img src="https://d2i5a4y6yksdm0.cloudfront.net/images/arrow-up.png" class="arrow-up" />
         Please enter your email
@@ -17,7 +18,8 @@
     <input type="hidden" name="affiliateLink" value="wildz" />
     <input type="hidden" name="templateNumber" value="511" />
 
-    <div class="button form-group btns-group btn btn-primary d-block w-100" type="submit" name="submit" id="submit_btn">
+    <div @click="submitEmail" class="button form-group btns-group btn btn-primary d-block w-100" type="submit"
+        name="submit" id="submit_btn">
         Claim it! </div>
 
 

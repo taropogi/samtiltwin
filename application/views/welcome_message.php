@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>?v=<?= random_string('alnum', 16) ?>">
-    <script src="https://unpkg.com/vue@3"></script>
-
-</head>
+<?php
+$this->load->view('segments/global/head_tag');
+?>
 
 <body class='my-body-class another-body-class'>
 
-    <div class="bxo bxo_lander container-fluid p-0" id="app">
+    <div id="app" class="bxo bxo_lander container-fluid p-0">
         <header class="bxo-header col-md-12 mb-4 pt-3 pt-md-4 text-center">
             <div class="bxo-logo">
                 <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo">
@@ -69,8 +59,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
-    <script src="/assets/js/app.js"></script>
 
+    <script src="/assets/js/app.js?v=<?= random_string('alnum', 16) ?>"></script>
 </body>
 
 </html>
