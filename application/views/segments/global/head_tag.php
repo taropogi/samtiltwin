@@ -10,5 +10,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>?v=<?= random_string('alnum', 16) ?>">
     <script src="https://unpkg.com/vue@3"></script>
 
-
+    <script>
+    baseUrl = "<?= base_url() ?>";
+    </script>
 </head>

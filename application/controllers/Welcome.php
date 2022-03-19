@@ -28,8 +28,15 @@ class Welcome extends CI_Controller
 
 	public function insertEntry()
 	{
+		$stream_clean = $this->security->xss_clean($this->input->raw_input_stream);
+		$request = json_decode($stream_clean);
+
+		$email = $request->emailAddress;
+
+
+
 		$this->db->insert('entries', [
-			'email_address' => 'test@test.com'
+			'email_address' => $email
 		]);
 	}
 }

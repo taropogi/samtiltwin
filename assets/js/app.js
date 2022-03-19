@@ -6,17 +6,25 @@ const app = Vue.createApp({
 	},
 	methods: {
 		submitEmail() {
-			fetch("http://samtiltwin.test/welcome/insertEntry", {
+			fetch(baseUrl + "welcome/insertEntry", {
 				method: "POST",
 				headers: {
-					"Content-Type": "application-json",
+					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
-					emailAddress: this.enteredEmail,
+					emailAddress: "taro",
 				}),
-			});
+			})
+				.then((res) => {
+					console.log("RESSSSSSSS", res);
+					//console.log("Error", res.data);
+					//console.log(baseUrl + "welcome/insertEntry");
+				})
+				.catch((err) => {
+					//	console.log("ERROR", err);
+				});
 
-			console.log("done");
+			//console.log(baseUrl);
 		},
 	},
 });
