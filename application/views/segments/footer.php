@@ -18,7 +18,7 @@
 
 
                  <br>
-                 <div id="copyright">Copyright © 2022 TiltWIN.com - All rights reserved</div>
+                 <div id="copyright">Copyright © 2022 Sam Van De Stadt - All rights reserved</div>
                  <br>
              </div>
 

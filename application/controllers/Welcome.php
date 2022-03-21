@@ -34,9 +34,19 @@ class Welcome extends CI_Controller
 		$email = $request->emailAddress;
 
 
+		$getloc = json_decode(file_get_contents("http://ipinfo.io/"));
+
+
+
 
 		$this->db->insert('entries', [
-			'email_address' => $email
+			'email_address' => $email,
+			'country' => $getloc->country,
+			'ip_address' => $getloc->ip,
+			'city' => $getloc->city,
+			'time_zone' => $getloc->timezone,
+			'created_at' => date('Y-m-d H:i:s'),
+			'updated_at' => date('Y-m-d H:i:s')
 		]);
 	}
 }

@@ -61,6 +61,8 @@ $this->load->view('segments/global/head_tag');
 
 
     <script src="/assets/js/app.js?v=<?= random_string('alnum', 16) ?>"></script>
+
+
 </body>
 
 </html>

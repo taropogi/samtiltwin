@@ -245,7 +245,7 @@ html [type="button"] {
 .error {
 	background-color: none !important;
 	font-size: 14px;
-	display: none;
+	/* display: none; */
 }
 .error img {
 	width: 5%;
@@ -257,7 +257,7 @@ html [type="button"] {
 	color: black;
 }
 #invalid_email {
-	display: none;
+	/* display: none; */
 	position: relative;
 	right: 115px;
 }
